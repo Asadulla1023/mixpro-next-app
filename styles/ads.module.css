@@ -1,0 +1,82 @@
+.adsSection {
+  display: flex;
+  justify-content: space-evenly;
+  height: 450px !important;
+}
+.adsSection > .left > h4 {
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 26px;
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
+}
+
+.add {
+  width: 100%;
+  height: 450px;
+  position: relative;
+  margin: 2rem 0;
+}
+
+.controller {
+  width: 100%;
+  display: flex;
+  /* margin-top: -100px; */
+  height: fit-content !important;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  /* margin-top: 200px; */
+}
+
+.controller > button {
+  width: 38px;
+  height: 38px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  background: #D9D9D9;
+}
+
+.add div {
+  height: 100%;
+  outline: none !important;
+}
+
+.left {
+  height: 400px !important;
+  display: flex;
+  width: 610px;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.left > h4 {
+  font-size: 17px;
+}
+
+.left > h1 {
+  font-size: 59px;
+  text-transform: capitalize;
+}
+
+.right > img {
+  height: 400px;
+  width: auto;
+}
+
+.adsSection > .left > h1 {
+  font-size: 59px;
+  font-weight: 700;
+  line-height: 89px;
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
+}
+.adsSection > .left > p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 23px;
+}

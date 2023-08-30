@@ -1,0 +1,33 @@
+.categories {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #F5F5F5;
+}
+
+.categoriesSection {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    color: #000;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.arrow {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.arrow img{
+    transition: 0.4s linear;
+  }
+  
+.arrow img:hover {
+    cursor: pointer;
+   rotate: -180deg;
+   transition: 0.4s;
+}
+  

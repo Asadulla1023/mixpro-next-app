@@ -1,0 +1,83 @@
+.footer {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #F5F5F5;
+    margin-top: 7.5rem;
+    padding: 66px 0;
+}
+
+.footerSection {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+
+.products h4 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.products ul {
+    margin-top: 20px;
+}
+
+.products ul li {
+    font-size: 15px;
+    padding-top: 10px;
+    line-height: normal;
+    font-weight: 400;
+}
+
+.connect h1 {
+    text-align: center;
+    cursor: pointer;
+}
+
+.icon {
+    cursor: pointer;
+    margin-top: 43px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    justify-content: center;
+}
+
+
+.inputButton {
+    padding: 6px 5px;
+    width: 250px;
+    height: 50px;
+    background-color: #fff;
+    justify-content: center;
+    display: flex;
+    margin-top: 41px;
+}
+
+.inputButton button {
+    border: none;
+    padding: 10px 14px;
+    background: #BF3D3F;
+    color: #fff;
+    cursor: pointer;
+    transition: .1s ease-in;
+}
+
+.inputButton button:active {
+    transform: scale(0.9);
+}
+
+.inputButton input {
+    padding: 2px 5px;
+    width: 68%;
+    border: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputButton input:focus-visible {
+    outline: none;
+}

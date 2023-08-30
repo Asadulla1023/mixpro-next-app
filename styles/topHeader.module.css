@@ -1,0 +1,72 @@
+.topHeader {
+    width: 100%;
+    background-color: rgba(245, 245, 245, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.leftNav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.leftNav a {
+    color: #23181C;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.leftNav span {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 26px;
+    background-color: #000;
+}
+
+.rightNav {
+    display: flex;
+    align-items: center;
+    gap: 19.85px;
+}
+
+.rightNav p {
+    color: #23181C;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.rightNav span {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 26px;
+    background-color: #000;
+}
+
+
+.arrowLang {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.arrowLang img{
+    transition: 0.4s linear;
+  }
+  
+.arrowLang img:hover {
+    cursor: pointer;
+   rotate: -180deg;
+   transition: 0.4s;
+}
+  
