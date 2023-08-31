@@ -9,6 +9,7 @@ import Image from "next/image";
 import Card from "./components/global/Card";
 import ICard from "@/interfaces/ICard";
 import {CARD_OBJ_UZ} from "../constant/index"
+import Footer from "./components/global/Footer";
 const Page = () => {
     return (
         <div className={styles.page}>
@@ -65,6 +66,7 @@ const Page = () => {
                     </div>
                 </div>
             </Container>
+            <Footer/>
         </div>
     );
 };
