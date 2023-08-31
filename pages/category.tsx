@@ -29,27 +29,13 @@ const Page = () => {
                 </div>
                 <div className={styles.pageSection}>
                     <div className={styles.left}>
-                        <p>Brends</p>
-                        <div className={styles.inputLabel}>
+                        <h3>Brends</h3>
+                        {CARD_OBJ_UZ.map((e:ICard)=> {
+                            return <div className={styles.inputLabel}>
                             <input type="checkbox" />
-                            <label>JBL</label>
+                            <label>{e.manifacturer}</label>
                         </div>
-                        <div className={styles.inputLabel}>
-                            <input type="checkbox" />
-                            <label>Beat</label>
-                        </div>
-                        <div className={styles.inputLabel}>
-                            <input type="checkbox" />
-                            <label>Logitech</label>
-                        </div>
-                        <div className={styles.inputLabel}>
-                            <input type="checkbox" />
-                            <label>Samsung</label>
-                        </div>
-                        <div className={styles.inputLabel}>
-                            <input type="checkbox" />
-                            <label>Sony</label>
-                        </div>
+                        })}
                     </div>
                     <div className={styles.right}>
                         {CARD_OBJ_UZ.map((e: ICard, index: number) => {

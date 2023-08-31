@@ -67,7 +67,7 @@ export const CARD_OBJ_UZ: ICard[] = [
     oldPrice: 400,
     price: 300,
     url: "/detail/some-id",
-    manifacturer: "JBL Квантум ONE  ",
+    manifacturer: "JBL",
     desc: "Lorem, ipsum dolor sit amet consectetur adipisicing eilt. Tempore libero, delectus aut sint dolore facere voluptatum quidem alias asperiores veniam non explicabo, sapiente dolor numquam corporis vero iste consectetur."
   },
   {
@@ -76,7 +76,7 @@ export const CARD_OBJ_UZ: ICard[] = [
     oldPrice: 400,
     price: 300,
     url: "/detail/some-id",
-    manifacturer: "JBL Квантум ONE  ",
+    manifacturer: "Beat",
     desc: "Lorem, ipsum dolor sit amet consectetur adipisicing eilt. Tempore libero, delectus aut sint dolore facere voluptatum quidem alias asperiores veniam non explicabo, sapiente dolor numquam corporis vero iste consectetur."
   },
   {
@@ -85,7 +85,7 @@ export const CARD_OBJ_UZ: ICard[] = [
     oldPrice: 400,
     price: 300,
     url: "/detail/some-id",
-    manifacturer: "JBL Квантум ONE  ",
+    manifacturer: "Logitech",
     desc: "Lorem, ipsum dolor sit amet consectetur adipisicing eilt. Tempore libero, delectus aut sint dolore facere voluptatum quidem alias asperiores veniam non explicabo, sapiente dolor numquam corporis vero iste consectetur."
   },
   {
@@ -94,7 +94,16 @@ export const CARD_OBJ_UZ: ICard[] = [
     oldPrice: 400,
     price: 300,
     url: "/detail/some-id",
-    manifacturer: "JBL Квантум ONE  ",
+    manifacturer: "Samsung",
+    desc: "Lorem, ipsum dolor sit amet consectetur adipisicing eilt. Tempore libero, delectus aut sint dolore facere voluptatum quidem alias asperiores veniam non explicabo, sapiente dolor numquam corporis vero iste consectetur."
+  },
+  {
+    images: ["/images/product.png", "/images/product.png"],
+    title: "JBL JR 310BT",
+    oldPrice: 400,
+    price: 300,
+    url: "/detail/some-id",
+    manifacturer: "Sony",
     desc: "Lorem, ipsum dolor sit amet consectetur adipisicing eilt. Tempore libero, delectus aut sint dolore facere voluptatum quidem alias asperiores veniam non explicabo, sapiente dolor numquam corporis vero iste consectetur."
   },
 ];
