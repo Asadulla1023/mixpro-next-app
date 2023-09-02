@@ -31,8 +31,8 @@ export default function Home() {
         <button onClick={()=> {
           router.push("/products")
         }}>View all</button>
-        <TuneBlog/>
       </Container>
+      <TuneBlog/>
       <Footer />
     </main>
   );
