@@ -1,0 +1,33 @@
+.notfound {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.authentificate {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.authentificate > button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 5px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #494949;
+    width: 206px;
+}

@@ -5,3 +5,24 @@
     align-items: center;
     width: 1320px;
 }
+
+.container h2 {
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+.container button {
+    font-size: 13px;
+    background: #000;
+    width: 120px;
+    height: 45px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.container > button:hover {
+    background: #444444;
+}

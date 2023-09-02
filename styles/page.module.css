@@ -4,3 +4,11 @@
   justify-content: space-between;
   align-items: center;
 }
+
+.productsWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.2230%;
+  row-gap: 1.4em;
+  margin: 2rem 0;
+}
