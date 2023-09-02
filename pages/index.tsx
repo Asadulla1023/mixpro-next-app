@@ -11,6 +11,7 @@ import { ADS_RU, ADS_UZ } from "@/constant";
 import { useRouter } from "next/navigation";
 import ICard from "@/interfaces/ICard";
 import Card from "./components/global/Card";
+import TuneBlog from "./components/local/TuneBlog";
 export default function Home() {
   const {data:session} = useSession()
   const router = useRouter()
@@ -30,6 +31,7 @@ export default function Home() {
         <button onClick={()=> {
           router.push("/products")
         }}>View all</button>
+        <TuneBlog/>
       </Container>
       <Footer />
     </main>

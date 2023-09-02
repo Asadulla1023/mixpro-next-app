@@ -1,0 +1,26 @@
+.tuneBlog {
+    padding: 34px 126px;
+}
+
+.blog {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 40px;
+}
+
+.blogRight h1 {
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.blogRight p {
+    padding-top: 21px;
+    width: 634px;
+}
+
+.blogRight button {
+    margin-top: 57px;
+    border: none;
+}
