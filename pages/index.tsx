@@ -46,6 +46,7 @@ export default function Home() {
           router.push("/products")
         }}>View all</button>
       </Container>
+      <TuneBlog/>
       <Footer />
     </main>
   );
