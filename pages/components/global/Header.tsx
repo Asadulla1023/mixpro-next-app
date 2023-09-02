@@ -2,19 +2,15 @@ import React from "react";
 import styles from "@/styles/header.module.css";
 import Container from "./Container";
 import Image from "next/image";
-import { ADS_UZ, ADS_RU } from "@/constant";
-import { usePathname } from "next/navigation";
-import ICard from "@/interfaces/ICard";
-import { signIn, useSession } from "next-auth/react";
+import { useSession } from "next-auth/react";
+import Link from "next/link";
 const Header = () => {
-  const path = usePathname();
-  const session = useSession()
-  console.log(session);
+  const { data: session } = useSession()
   return (
     <div className={styles.header}>
       <Container>
         <div className={styles.headerSection}>
-          <h1>MIXPRO</h1>
+          <Link href={"/"}><h1>MIXPRO</h1></Link>
           <div className={styles.search}>
             <input type="text" placeholder="search" />
             <Image
@@ -26,9 +22,7 @@ const Header = () => {
           </div>
           <div className={styles.icon}>
             <Image src={"/icons/noti.svg"} width={20} height={23} alt="noti" />
-            <Image onClick={()=> {
-              signIn()
-            }} src={"/icons/user.svg"} width={23} height={23} alt="noti" />
+            <Link href={session?.user ? "/profile": "/auth"}><Image src={"/icons/user.svg"} width={23} height={23} alt="noti" /></Link>
             <Image src={"/icons/cart.svg"} width={26} height={23} alt="noti" />
           </div>
         </div>

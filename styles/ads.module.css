@@ -1,7 +1,7 @@
 .adsSection {
   display: flex;
   justify-content: space-evenly;
-  height: 450px !important;
+  height: 400px !important;
 }
 .adsSection > .left > h4 {
   font-size: 17px;
@@ -13,7 +13,7 @@
 
 .add {
   width: 100%;
-  height: 450px;
+  height: 400px;
   position: relative;
   margin: 2rem 0;
 }
@@ -40,6 +40,10 @@
   border-radius: 30px;
   background: #D9D9D9;
 }
+.controller > button:disabled {
+  background: #616161;
+  cursor: not-allowed;
+}
 
 .add div {
   height: 100%;
@@ -61,6 +65,10 @@
 .left > h1 {
   font-size: 59px;
   text-transform: capitalize;
+}
+
+.right {
+  height: 400px !important;
 }
 
 .right > img {

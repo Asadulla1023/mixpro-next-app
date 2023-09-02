@@ -3,6 +3,7 @@ import styles from "@/styles/topHeader.module.css"
 import Container from './Container'
 import Link from 'next/link'
 import Image from 'next/image'
+import { useSession, signIn } from 'next-auth/react'
 
 const TopHeader = () => {
   return (
