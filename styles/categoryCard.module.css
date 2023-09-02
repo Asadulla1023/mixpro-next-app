@@ -1,0 +1,61 @@
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.categoryCardSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card {
+    background-color: #d9d9d9;
+    display: flex;
+    justify-content: space-evenly;
+    height: 150px !important;
+}
+
+.add {
+    width: 100%;
+    height: 450px;
+    position: relative;
+    margin: 2rem 0;
+}
+
+.mySwiper {
+    width: 100%;
+    position: relative;
+    margin: 2rem 0;
+}
+
+.cardTxt {
+    padding-left: 12px;
+}
+
+.cardTxt>h4 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    color: rgba(0, 0, 0, 1);
+    padding-bottom: 38px;
+    padding-top: 22px;
+}
+
+.cardTxt>button {
+    width: 170px;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(0, 0, 0, 1);
+}

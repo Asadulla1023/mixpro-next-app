@@ -11,6 +11,8 @@ import { ADS_RU, ADS_UZ } from "@/constant";
 import { useRouter } from "next/navigation";
 import ICard from "@/interfaces/ICard";
 import Card from "./components/global/Card";
+import { v4 as uuidv4 } from "uuid";
+import CategoryCard from "./components/global/CategoryCard";
 import TuneBlog from "./components/local/TuneBlog";
 export default function Home() {
   const { data: session } = useSession()
@@ -21,11 +23,12 @@ export default function Home() {
       <Header />
       <Categories />
       <Ads />
+      <CategoryCard />
       <Container>
         <h2>Latest products</h2>
         <div className={styles.productsWrapper}>
           {ADS_RU.map((e: ICard, index) => {
-            return <Card desc={e.desc} images={e.images} manifacturer={e.manifacturer} oldPrice={e.oldPrice} price={e.price} title={e.title} url={String(index)} />
+            return <Card key={uuidv4()} desc={e.desc} images={e.images} manifacturer={e.manifacturer} oldPrice={e.oldPrice} price={e.price} title={e.title} url={String(index)} />
           })}
         </div>
         <button onClick={() => {
@@ -42,7 +45,7 @@ export default function Home() {
         <button onClick={() => {
           router.push("/products")
         }}>View all</button>
-        <TuneBlog/>
+        <TuneBlog />
       </Container>
       <Footer />
     </main>
