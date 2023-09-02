@@ -30,11 +30,11 @@ const Page = () => {
                 <div className={styles.pageSection}>
                     <div className={styles.left}>
                         <p>Brends</p>
-                        {CARD_OBJ_UZ.map((e:ICard) => {
+                        {CARD_OBJ_UZ.map((e: ICard) => {
                             return <div className={styles.inputLabel}>
-                            <input type="checkbox" />
-                            <label>{e.manifacturer}</label>
-                        </div>
+                                <input type="checkbox" />
+                                <label>{e.manifacturer}</label>
+                            </div>
                         })}
                     </div>
                     <div className={styles.right}>
@@ -45,7 +45,7 @@ const Page = () => {
                                     title={e.title}
                                     oldPrice={e.oldPrice}
                                     price={e.price}
-                                    url={`${index+1}`} manifacturer={""} desc={""}
+                                    url={`${index + 1}`} manifacturer={""} desc={""}
                                 />
                             );
                         })}

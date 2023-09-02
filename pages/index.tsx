@@ -12,7 +12,7 @@ import { useRouter } from "next/navigation";
 import ICard from "@/interfaces/ICard";
 import Card from "./components/global/Card";
 export default function Home() {
-  const {data:session} = useSession()
+  const { data: session } = useSession()
   const router = useRouter()
   return (
     <main className={styles.main}>
@@ -23,11 +23,22 @@ export default function Home() {
       <Container>
         <h2>Latest products</h2>
         <div className={styles.productsWrapper}>
-          {ADS_RU.map((e:ICard, index)=> {
+          {ADS_RU.map((e: ICard, index) => {
             return <Card desc={e.desc} images={e.images} manifacturer={e.manifacturer} oldPrice={e.oldPrice} price={e.price} title={e.title} url={String(index)} />
           })}
         </div>
-        <button onClick={()=> {
+        <button onClick={() => {
+          router.push("/products")
+        }}>View all</button>
+      </Container>
+      <Container>
+        <h2>BEST SELLING</h2>
+        <div className={styles.productsWrapper}>
+          {ADS_RU.map((e: ICard, index) => {
+            return <Card desc={e.desc} images={e.images} manifacturer={e.manifacturer} oldPrice={e.oldPrice} price={e.price} title={e.title} url={String(index)} />
+          })}
+        </div>
+        <button onClick={() => {
           router.push("/products")
         }}>View all</button>
       </Container>

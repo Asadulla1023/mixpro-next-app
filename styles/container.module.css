@@ -16,9 +16,9 @@
     background: #000;
     width: 120px;
     height: 45px;
+    margin-bottom: 4rem;
     text-transform: uppercase;
     color: #fff;
-    margin-bottom: 2rem;
     cursor: pointer;
     transition: 0.2s;
 }
