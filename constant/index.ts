@@ -1,4 +1,5 @@
 import ICard from "@/interfaces/ICard";
+import ICategoryCard from "@/interfaces/ICategoryCard";
 
 export const ADS_UZ: ICard[] = [
   {
@@ -98,3 +99,33 @@ export const CARD_OBJ_UZ: ICard[] = [
     desc: "Lorem, ipsum dolor sit amet consectetur adipisicing eilt. Tempore libero, delectus aut sint dolore facere voluptatum quidem alias asperiores veniam non explicabo, sapiente dolor numquam corporis vero iste consectetur."
   },
 ];
+
+export const CATEGORYCARD_RU: ICategoryCard[] = [
+  {
+    image: "/images/blackpods.png",
+    title: "оапса",
+  },
+  {
+    image: "/images/redpods.png",
+    title: "оапса",
+  },
+  {
+    image: "/images/redpods.png",
+    title: "оапса",
+  },
+];
+
+export const CATEGORYCARD_UZ: ICategoryCard[] =[
+  {
+    image: "/images/blackpods.png",
+    title: "Headphone & Earbuds",
+  },
+  {
+    image: "/images/redpods.png",
+    title: "JBL Quantom Series",
+  },
+  {
+    image: "/images/redpods.png",
+    title: "True Wirelles Earbuds",
+  },
+]
