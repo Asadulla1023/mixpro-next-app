@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styles from "@/styles/page.module.css";
 import Container from "./components/global/Container";
 import Header from "./components/global/Header";
@@ -6,8 +5,8 @@ import TopHeader from "./components/global/TopHeader";
 import Categories from "./components/global/Categories";
 import Footer from "./components/global/Footer";
 import Ads from "./components/local/Ads"
-import { signOut, useSession } from "next-auth/react";
-import { ADS_RU, ADS_UZ } from "@/constant";
+import { useSession } from "next-auth/react";
+import { ADS_RU } from "@/constant";
 import { useRouter } from "next/navigation";
 import ICard from "@/interfaces/ICard";
 import Card from "./components/global/Card";
@@ -35,6 +34,7 @@ export default function Home() {
           router.push("/products")
         }}>View all</button>
       </Container>
+      <TuneBlog />
       <Container>
         <h2>BEST SELLING</h2>
         <div className={styles.productsWrapper}>
@@ -45,7 +45,6 @@ export default function Home() {
         <button onClick={() => {
           router.push("/products")
         }}>View all</button>
-        <TuneBlog />
       </Container>
       <Footer />
     </main>
