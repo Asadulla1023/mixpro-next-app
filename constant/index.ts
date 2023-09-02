@@ -192,3 +192,52 @@ export const CARD_OBJ_UZ: ICard[] = [
     desc: "Lorem, ipsum dolor sit amet consectetur adipisicing eilt. Tempore libero, delectus aut sint dolore facere voluptatum quidem alias asperiores veniam non explicabo, sapiente dolor numquam corporis vero iste consectetur.",
   },
 ];
+export const CATEGORYCARD_UZ: ICategoryCard[] = [
+  {
+    image: "/images/blackpods.png",
+    title: "Headphone & Earbuds",
+  },
+  {
+    image: "/images/blackpods.png",
+    title: "JBL Quantom Series",
+  },
+  {
+    image: "/images/blackpods.png",
+    title: "True Wirelles Earbuds",
+  },
+  {
+    image: "/images/blackpods.png",
+    title: "JBL Quantom Series",
+  },
+  {
+    image: "/images/blackpods.png",
+    title: "JBL Quantom Series",
+  },
+  {
+    image: "/images/blackpods.png",
+    title: "JBL Quantom Series",
+  },
+  {
+    image: "/images/blackpods.png",
+    title: "JBL Quantom Series",
+  },
+];
+
+export const CATEGORYCARD_RU: ICategoryCard[] = [
+  {
+    image: "/images/blackpods.png",
+    title: "оапса",
+  },
+  {
+    image: "/images/redpods.png",
+    title: "оапса",
+  },
+  {
+    image: "/images/redpods.png",
+    title: "оапса",
+  },
+  {
+    image: "/images/redpods.png",
+    title: "оапса",
+  },
+];
