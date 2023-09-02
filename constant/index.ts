@@ -1,4 +1,5 @@
 import ICard from "@/interfaces/ICard";
+import ICategoryCard from "@/interfaces/ICategoryCard";
 
 export const ADS_UZ: ICard[] = [
   {
