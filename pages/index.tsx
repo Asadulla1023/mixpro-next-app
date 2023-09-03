@@ -40,7 +40,7 @@ export default function Home() {
         <h2>BEST SELLING</h2>
         <div className={styles.productsWrapper}>
           {ADS_RU.map((e: ICard, index) => {
-            return <Card desc={e.desc} images={e.images} manifacturer={e.manifacturer} oldPrice={e.oldPrice} price={e.price} title={e.title} url={String(index)} />
+            return <Card key={uuidv4()} desc={e.desc} images={e.images} manifacturer={e.manifacturer} oldPrice={e.oldPrice} price={e.price} title={e.title} url={String(index)} />
           })}
         </div>
         <button onClick={() => {
