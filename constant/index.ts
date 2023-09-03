@@ -241,3 +241,4 @@ export const CATEGORYCARD_RU: ICategoryCard[] = [
     title: "оапса",
   },
 ];
+
