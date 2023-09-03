@@ -9,6 +9,7 @@
 .container h2 {
     font-size: 32px;
     text-transform: uppercase;
+    margin-top: 4rem !important;
 }
 
 .container button {
@@ -20,6 +21,7 @@
     text-transform: uppercase;
     color: #fff;
     cursor: pointer;
+    margin-top: 4rem;
     transition: 0.2s;
 }
 

@@ -13,6 +13,7 @@ import Card from "./components/global/Card";
 import { v4 as uuidv4 } from "uuid";
 import CategoryCard from "./components/global/CategoryCard";
 import TuneBlog from "./components/local/TuneBlog";
+import Image from "next/image";
 export default function Home() {
   const { data: session } = useSession()
   const router = useRouter()
@@ -46,7 +47,34 @@ export default function Home() {
           router.push("/products")
         }}>View all</button>
       </Container>
-      <TuneBlog/>
+      <Container>
+        <h2>LATEST BLOG</h2>
+        <div className={styles.blog}>
+          <Image src={"/images/blog1.jpg"} alt="blog image" width={660} height={408} />
+          <div className={styles.blogContent}>
+            <h3>Lorem ipsum dolor sit amet</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quit sunt
+              facilis    laborum,    similique,    maxime    soluta    eligendi    saepe
+              perspiciatis, quidem voluptas ratione officia modi quibusdam id!
+              Atque, commodi? Earum, illum fuga.</p>
+            <button>Read more</button>
+          </div>
+        </div>
+        <div className={styles.blog}>
+          <div className={styles.blogContent}>
+            <h3>Lorem ipsum dolor sit amet</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quit sunt
+              facilis    laborum,    similique,    maxime    soluta    eligendi    saepe
+              perspiciatis, quidem voluptas ratione officia modi quibusdam id!
+              Atque, commodi? Earum, illum fuga.</p>
+            <button>Read more</button>
+          </div>
+          <Image src={"/images/blog2.jpg"} alt="blog image" width={660} height={408} />
+        </div>
+        <button onClick={() => {
+          router.push("/products")
+        }}>View all</button>
+      </Container>
       <Footer />
     </main>
   );

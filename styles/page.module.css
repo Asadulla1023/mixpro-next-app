@@ -10,9 +10,34 @@
   flex-wrap: wrap;
   gap: 2.2210%;
   row-gap: 1.4em;
-  margin: 2rem 0;
+  /* margin-top: 4rem !important; */
+}
+
+.productsWrapper > h2 {
+  margin-top: 4rem !important;
 }
 
 .productsWrapper > a {
   width: auto !important;
+}
+
+.blog {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+  margin-top: 4rem;
+}
+
+.blogContent {
+  width: 555px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.blogContent > button {
+  width: 130px !important;
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important;
 }
