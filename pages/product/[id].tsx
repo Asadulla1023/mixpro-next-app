@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import React, { useState } from "react";
 // import axios from "axios";
-import styles from "../../styles/detail.module.css";
+import styles from "@/styles/detail.module.css";
 import arrow from "../../public/arrow.svg";
 import headphones from "../../public/headphone.png";
 import star from "../../public/star.svg";

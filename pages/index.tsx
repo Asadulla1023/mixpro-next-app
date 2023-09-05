@@ -6,7 +6,7 @@ import Categories from "./components/global/Categories";
 import Footer from "./components/global/Footer";
 import Ads from "./components/local/Ads"
 import { useSession } from "next-auth/react";
-import { ADS_RU } from "@/constant";
+import { ADS_RU, CARD_OBJ_UZ } from "@/constant";
 import { useRouter } from "next/navigation";
 import ICard from "@/interfaces/ICard";
 import Card from "./components/global/Card";
@@ -27,8 +27,8 @@ export default function Home() {
       <Container>
         <h2>Latest products</h2>
         <div className={styles.productsWrapper}>
-          {ADS_RU.map((e: ICard, index) => {
-            return <Card key={uuidv4()} desc={e.desc} images={e.images} manifacturer={e.manifacturer} oldPrice={e.oldPrice} price={e.price} title={e.title} url={String(index)} />
+          {CARD_OBJ_UZ.map((e: ICard, index:number) => {
+            return <Card key={uuidv4()} desc={e.desc} images={e.images} manifacturer={e.manifacturer} oldPrice={e.oldPrice} price={e.price} title={e.title} url={e.url} />
           })}
         </div>
         <button onClick={() => {
@@ -39,8 +39,8 @@ export default function Home() {
       <Container>
         <h2>BEST SELLING</h2>
         <div className={styles.productsWrapper}>
-          {ADS_RU.map((e: ICard, index) => {
-            return <Card key={uuidv4()} desc={e.desc} images={e.images} manifacturer={e.manifacturer} oldPrice={e.oldPrice} price={e.price} title={e.title} url={String(index)} />
+          {CARD_OBJ_UZ.map((e: ICard, index:number) => {
+            return <Card key={uuidv4()} desc={e.desc} images={e.images} manifacturer={e.manifacturer} oldPrice={e.oldPrice} price={e.price} title={e.title} url={e.url} />
           })}
         </div>
         <button onClick={() => {
@@ -54,7 +54,8 @@ export default function Home() {
           <div className={styles.blogContent}>
             <h3>Lorem ipsum dolor sit amet</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quit sunt
-              facilis    laborum,    similique,    maxime    soluta    eligendi    saepe
+              facilis    laborum,    similique,    maxime    s
+              oluta    eligendi    saepe
               perspiciatis, quidem voluptas ratione officia modi quibusdam id!
               Atque, commodi? Earum, illum fuga.</p>
             <button>Read more</button>
