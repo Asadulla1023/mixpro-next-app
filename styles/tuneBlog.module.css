@@ -1,8 +1,11 @@
 .tuneBlog {
-    background: #F5F5F5;
+    display: flex;
     width: 100%;
+    align-items: center;
     justify-content: space-evenly;
-    padding: 34px 0;
+    background-color: #F5F5F5;  
+    margin-top: auto;
+    padding: 34px 126px;
 }
 
 .blog {
