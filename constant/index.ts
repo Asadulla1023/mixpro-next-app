@@ -1,5 +1,6 @@
 import ICard from "@/interfaces/ICard";
 import ICategoryCard from "@/interfaces/ICategoryCard";
+import IReview from "@/interfaces/IReview";
 
 export const ADS_UZ: ICard[] = [
   {
@@ -242,3 +243,30 @@ export const CATEGORYCARD_RU: ICategoryCard[] = [
   },
 ];
 
+
+export const REVIEWS_UZ: IReview[] = [
+  {
+    userImage: "/images/review.png",
+    userName: "Azamat Dev",
+    rate: 1,
+    review: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quos deleniti ullam! Assumenda est accusantium ipsa voluptates maxime perferendis deleniti sequi provident in, dolor saepe laudantium rem exercitationem nihil ea!"
+  },
+  {
+    userImage: "/images/review.png",
+    userName: "Azamat Dev",
+    rate: 1,
+    review: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quos deleniti ullam! Assumenda est accusantium ipsa voluptates maxime perferendis deleniti sequi provident in, dolor saepe laudantium rem exercitationem nihil ea!"
+  },
+  {
+    userImage: "/images/review.png",
+    userName: "Azamat Dev",
+    rate: 1,
+    review: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quos deleniti ullam! Assumenda est accusantium ipsa voluptates maxime perferendis deleniti sequi provident in, dolor saepe laudantium rem exercitationem nihil ea!"
+  },
+  {
+    userImage: "/images/review.png",
+    userName: "Azamat Dev",
+    rate: 1,
+    review: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quos deleniti ullam! Assumenda est accusantium ipsa voluptates maxime perferendis deleniti sequi provident in, dolor saepe laudantium rem exercitationem nihil ea!"
+  },
+]

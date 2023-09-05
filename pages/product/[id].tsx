@@ -1,15 +1,12 @@
 import { useRouter } from "next/router";
 import React, { useState } from "react";
-// import axios from "axios";
 import styles from "@/styles/product.module.css";
-import headphones from "../../public/headphone.png";
-import star from "../../public/star.svg";
 import Image from "next/image";
 import Header from "../components/global/Header";
 import Link from "next/link";
 import Categories from "../components/global/Categories";
 import Container from "../components/global/Container";
-
+import Review from "../components/local/Review";
 const Detail = () => {
   const router = useRouter();
   const { id } = router.query;
@@ -20,19 +17,14 @@ const Detail = () => {
   const [counter, setCounter] = useState(1);
   const [focus, setFocus] = useState<boolean>(false);
 
-
-
   const selected = data.find((dt) => dt.p_id === id);
   selected && console.log(selected);
   // console.log(img);
   return (
     <>
-
-
       <div className={styles.detail}>
         <Header />
         <Categories />
-
         <Container>
           <div className={styles.small_Nav}>
             <ul className={styles.small_nav}>
@@ -125,6 +117,7 @@ const Detail = () => {
               </button>
             </div>
           </div>
+          <Review/>
         </Container>
 
 
